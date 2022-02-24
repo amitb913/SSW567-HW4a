@@ -1,0 +1,14 @@
+2. Write a description of what you thought about when you were designing the code. 
+What did *you* think was important to do to make it easy to test the program. 
+What are some of the challenges that you faced when testing this assignment.
+
+When designing the code, I was trying to think of every possible way the program could throw
+an error or return unexpected results. These included things like returning incorrect information
+or returning information for a user that did not exist. Another situation I considered was the
+case where someone is a valid user on GitHub but happens to have no repos, but since I did not know
+where I could find an example of an account like that, I had to omit it as a test case. Regardless,
+when I was implementing my program, I made sure to check whether the data being pulled actually
+contained content, and if not, GitHub would return a status code. I made it easy to test for certain
+situations like if there are no repositories or no commits by returning error messages for the specific
+conditions. In general, there is more that can be done to improve the test cases, but examples of users
+that might match the errors would be necessary to do so.
